@@ -29,3 +29,51 @@ let bigNum = 12345678901234567890n; // bigint
 let array = [1, 2, 3];          // массив
 let object = { key: "value" };  // объект
 ```
+
+### 2. **Условия и циклы**
+
+#### **Условия (`if`, `else`, `else if`)**
+
+Условные операторы позволяют выполнять код в зависимости от определенных условий.
+
+Пример:
+```javascript
+let temperature = 30;
+
+if (temperature > 25) {
+    console.log("It's hot outside!");
+} else if (temperature > 15) {
+    console.log("It's warm outside.");
+} else {
+    console.log("It's cold outside.");
+}
+```
+
+#### **Циклы (`for`, `while`, `do while`)**
+
+Циклы используются для повторения кода несколько раз.
+
+**`for` цикл**:
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log("Iteration:", i);
+}
+```
+
+**`while` цикл**:
+```javascript
+let count = 0;
+while (count < 5) {
+    console.log("Count is:", count);
+    count++;
+}
+```
+
+**`do while` цикл**:
+```javascript
+let num = 0;
+do {
+    console.log("Number is:", num);
+    num++;
+} while (num < 5);
+```
