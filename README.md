@@ -58,8 +58,8 @@ if(age_1 < age_2) {  // 30. Если age_1 < age_2
     console.log("Technical work");
 }
 ```
-## Дополнительные задания к HW_1
-### HW_1_1
+### Дополнительные задания к HW_1
+#### HW_1_1
 ```javascript
 const check_age = function(age) {
     if(age < 10) {
@@ -76,4 +76,7 @@ const check_age = function(age) {
 console.log(check_age(17));
 console.log(check_age(18));
 console.log(check_age(61));
+```
+#### HW_1_2
+```javascript
 ```
