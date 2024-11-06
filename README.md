@@ -58,3 +58,4 @@ if(age_1 < age_2) {  // 30. Если age_1 < age_2
     console.log("Technical work");
 }
 ```
+## Задания с разным количеством звездочек HW_1
