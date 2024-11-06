@@ -21,7 +21,7 @@ console.log("item_4 = " + item_4);  // 12. Выводим item_4
 console.log("Конкатенация item_3 + item_4: " + (item_3 + item_4));  // 13. Конкатенация
 
 // 14. Выводим умножение item_3 и item_4
-console.log("Умножение item_3 * item_4: " + (item_3 * item_4));  // 14. Умножение (будет NaN из-за строки)
+console.log("Умножение item_3 * item_4: " + (item_3 * item_4));  // 14. Умножение (будет NaN)
 
 // 15. Создаем переменную item_5
 let item_5 = item_3;  // 16. Присваиваем item_3
