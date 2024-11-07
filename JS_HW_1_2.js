@@ -17,6 +17,7 @@ const check_age = function(age) {
     
 }
 
+console.log(check_age(9));
 console.log(check_age(17));
 console.log(check_age(18));
 console.log(check_age(61));
