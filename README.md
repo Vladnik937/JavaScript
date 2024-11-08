@@ -63,7 +63,7 @@ if(age_1 < age_2) {  // 30. Если age_1 < age_2
 Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст. Вывести в консоль результат работы функции с возрастами 17, 18, 61
 ```javascript
 const check_age = function(age) {
-    if(age < 10) {
+    if(age > 0 && age < 18) {
         return "You don't have access cause your age is " + age + " It's less then ";
     } else if(age >= 18 && age < 60) {
         return "Welcome !";
