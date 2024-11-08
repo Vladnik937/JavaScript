@@ -79,6 +79,7 @@ console.log(check_age(18));
 console.log(check_age(61));
 ```
 #### HW_1_2
+Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
 ```javascript
 const check_age = function(age) {
     if(typeof age === "number") {
@@ -104,6 +105,7 @@ console.log("NaN: " + check_age(NaN)); // Добавить проверку
 console.log("Infinity: " + check_age(Infinity)); // добавить проверку
 ```
 #### HW_1_3
+Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 ```javascript
 const check_age = function(age) {
     const age_n = Number(age);
@@ -134,4 +136,9 @@ console.log("Age 14.5: " + check_age(14.5));
 console.log("Text: " + check_age("Text"));
 console.log("NaN: " + check_age(NaN)); 
 console.log("Infinity: " + check_age(Infinity));
+```
+#### HW_1_4
+Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+```javascript
+
 ```
