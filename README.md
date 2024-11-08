@@ -108,7 +108,7 @@ console.log("Infinity: " + check_age(Infinity)); // добавить прове�
 Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 ```javascript
 const check_age = function(age) {
-    const age_n = Number(age);
+    const age_n = Number(age); // const age_n = +age
     
     // отсечение NaN, Inf, -Inf, дробных и отрицательных значений age
     if(!Number.isFinite(age_n) || !Number.isInteger(age_n) || age_n <= 0) {
@@ -146,7 +146,7 @@ function UserAge() {
         alert("Вы нажали кнопку отмена или оставили поле пустым");
         return;
     }
-    const age_n = Number(age);
+    const age_n = Number(age); // const age_n = +age
     
     // отсечение NaN, Inf, -Inf, дробных и отрицательных значений age
     if(!Number.isFinite(age_n) || !Number.isInteger(age_n) || age_n <= 0) {
