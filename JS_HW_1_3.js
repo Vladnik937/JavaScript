@@ -1,5 +1,5 @@
 const check_age = function(age) {
-    const age_n = Number(age);
+    const age_n = Number(age); // const age_n = +age
     
     // отсечение NaN, Inf, -Inf, дробных и отрицательных значений age
     if(!Number.isFinite(age_n) || !Number.isInteger(age_n) || age_n <= 0) {
