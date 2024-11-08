@@ -108,7 +108,7 @@ console.log("Infinity: " + check_age(Infinity)); // добавить прове�
 Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
 ```javascript
 const check_age = function(age) {
-    const age_n = Number(age);
+    const age_n = Number(age); // const age_n = +age
     
     // отсечение NaN, Inf, -Inf, дробных и отрицательных значений age
     if(!Number.isFinite(age_n) || !Number.isInteger(age_n) || age_n <= 0) {
@@ -140,5 +140,48 @@ console.log("Infinity: " + check_age(Infinity));
 #### HW_1_4
 Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
 ```javascript
+function UserAge() {
+    const age = prompt("Введите ваш возраст");
+    if(age === null || age.trim() ==="") {
+        alert("Вы нажали кнопку отмена или оставили поле пустым");
+        return;
+    }
+    const age_n = Number(age); // const age_n = +age
+    
+    // отсечение NaN, Inf, -Inf, дробных и отрицательных значений age
+    if(!Number.isFinite(age_n) || !Number.isInteger(age_n) || age_n <= 0) {
+        console.error("Ошибка: введите корректное число");
+        alert("Введите корректное число");
+        return;
+    }  
+        
+    if(age_n < 18) {
+        alert("You don't have access cause your age is " + age_n + " It's less then ");
+    } else if(age_n >= 18 && age_n < 60) {
+        alert("Welcome !");
+    } else if(age_n >= 60) {
+        alert("Keep calm and look Culture channel");
+    } else {
+        alert("Technical work"); // просто есть
+    }
+}
 
+// Добавление слушателя ивента на кнопку в html, чтобы при нажатии на кнопку выполнялась функция.
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("checkAge");
+    button.addEventListener("click", UserAge);
+});
+```
+Страница html
+```html
+<html>
+  <head>
+    <script src="JS_HW_1_4.js"></script> <!--Подключение JavaScript файла-->
+  </head>
+  <body>
+    <div class="block1">
+      <button id="checkAge"> AGE </button>
+    </div>
+  </body>
+</html>
 ```
