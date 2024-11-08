@@ -1,5 +1,5 @@
 const check_age = function(age) {
-    if(age < 10) {
+    if(age > 0 && age < 18) {
         return "You don't have access cause your age is " + age + " It's less then ";
     } else if(age >= 18 && age < 60) {
         return "Welcome !";

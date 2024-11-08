@@ -1,8 +1,6 @@
 const check_age = function(age) {
-    let age_type = typeof age;
-    console.log("Тип данных: " + age_type);
-    if(age_type === "number") {
-        if(age < 10) {
+    if(typeof age === "number") {
+        if(age > 0 && age < 18) {
             return "You don't have access cause your age is " + age + " It's less then ";
         } else if(age >= 18 && age < 60) {
             return "Welcome !";
@@ -10,15 +8,15 @@ const check_age = function(age) {
             return "Keep calm and look Culture channel";
         } else {
             return "Technical work";
-        }
+        } 
     } else {
-        console.error("Ошибка типа данных");
+        console.error("Ошибка: введите число")
     }
-    
 }
 
-console.log(check_age(9));
-console.log(check_age(17));
-console.log(check_age(18));
-console.log(check_age(61));
-console.log(check_age("Text"));
+console.log("Age 17: " + check_age(17));
+console.log("Age 18: " + check_age(18));
+console.log("Age 61: " + check_age(61));
+console.log("Text: " + check_age("Text"));
+//console.log("NaN: " + check_age(NaN)); // Добавить проверку
+//console.log("Infinity: " + check_age(Infinity)); // добавить проверку
