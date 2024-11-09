@@ -1,5 +1,5 @@
 # JavaScript
-## HW_1 (in process)
+## Homework_1
 ```Javascript
 // 1. Создаем переменную item_1
 let item_1 = 5;  // 2. Присваиваем 5
