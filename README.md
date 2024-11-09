@@ -286,7 +286,7 @@ function includes_field(pass) {
 ```html
 <html>
   <head>
-    <script src="JS_HW_2.JS"></script> <!--Подключение JavaScript файла-->
+    <script src="JS_HW_2_script.JS"></script> <!--Подключение JavaScript файла-->
   </head>
   <body>
     <div class="block1">
