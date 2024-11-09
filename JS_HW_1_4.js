@@ -1,6 +1,6 @@
 function UserAge() {
     const age = prompt("Введите ваш возраст");
-    if(age === null || age.trim() ==="") {
+    if(age === null || age.trim() === "") {
         alert("Вы нажали кнопку отмена или оставили поле пустым");
         return;
     }
