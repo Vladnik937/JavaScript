@@ -282,3 +282,16 @@ function includes_field(pass) {
     return pass.includes("@");
 }
 ```
+
+```html
+<html>
+  <head>
+    <script src="JS_HW_2.JS"></script> <!--Подключение JavaScript файла-->
+  </head>
+  <body>
+    <div class="block1">
+      <button id="check_pass"> Check Password </button>
+    </div>
+  </body>
+</html>
+```
