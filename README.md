@@ -238,6 +238,17 @@ function valid_script() {
         alert("Поле должно содержать символ '@'");
         return;
     }
+
+    if(!space_field(pass)) {
+        alert("Поле не должно содержать пробелы");
+        return;
+    }
+
+    if(!allowed_field(pass)) {
+        alert("Вы ввели запрещенные символы")
+        return;
+    }
+
     alert("Поле прошло все проверки!");
 }
 
@@ -261,6 +272,7 @@ function max_min_range(pass) {
 const lower = /[a-z]/;
 const upper = /[A-Z]/;
 const numbers = /[0-9]/;  // const numbers = /\d/;
+const allowed = /^[a-zA-Z0-9@]+$/;
 
 
 function lower_field(pass) {
@@ -280,6 +292,14 @@ function number_field(pass) {
 
 function includes_field(pass) {
     return pass.includes("@");
+}
+
+function space_field(pass) {
+    return !/\s/.test(pass);
+}
+
+function allowed_field(pass) {
+    return allowed.test(pass);
 }
 ```
 
